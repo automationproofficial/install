@@ -1,0 +1,1 @@
+/* html_badge.js content */
