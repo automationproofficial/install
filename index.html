@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,10 +28,14 @@
       background-color: #4f46e5; color: white; border: none;
       border-radius: 5px; cursor: pointer;
     }
-    #protected { display: none; padding: 2rem; }
+    #protected { display: none; }
+    section { padding: 2rem; }
+    h1 { font-size: 2.5rem; margin-bottom: 1rem; }
   </style>
 </head>
 <body>
+
+  <!-- Styled Login Overlay -->
   <div id="login-overlay">
     <div id="login-box">
       <h2>Enter Password</h2>
@@ -42,14 +45,49 @@
     </div>
   </div>
 
+  <!-- Main Site Content -->
   <div id="protected">
-    <h1>Welcome to Automation Pro Workflow</h1>
-    <p>This is your fully protected site with styled login screen.</p>
+    <section style="background:#f9f9f9;text-align:center;">
+      <h1>👋 Welcome to <span style="color:#7c3aed;">Automation Pro Workflow</span></h1>
+      <p>Your personal AI video assistant for Social Media</p>
+    </section>
+
+    <section>
+      <h2>✅ What It Does</h2>
+      <ul>
+        <li>🎬 Downloads videos from Google Drive</li>
+        <li>🚀 Auto uploads to TikTok or social platforms</li>
+        <li>📅 Posts on schedule or on demand</li>
+        <li>🧠 Runs 100% locally — no tech skills needed</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💡 Why It's Powerful</h2>
+      <ul>
+        <li>🔒 100% local = full privacy</li>
+        <li>💸 Free forever</li>
+        <li>🔁 Clone-ready reposting</li>
+        <li>🧱 Modular & customizable</li>
+        <li>🚫 No lock-in</li>
+        <li>🔐 Secure by default</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🚀 Get Started Instantly</h2>
+      <ol>
+        <li>📥 Download Docker</li>
+        <li>⚙️ Run n8n</li>
+        <li>📂 Import the workflow</li>
+        <li>✅ Connect, test, and post</li>
+      </ol>
+    </section>
   </div>
 
   <script>
     function checkPassword() {
-      const password = "autoposter2025"; // change this
+      const password = "autoposter2025"; // Change this
       const entered = document.getElementById("pw").value;
       if (entered === password) {
         localStorage.setItem("apw_authed", "yes");
