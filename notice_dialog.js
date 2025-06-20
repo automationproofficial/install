@@ -1,1 +1,0 @@
-// Notice dialog script placeholder
