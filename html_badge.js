@@ -1,0 +1,1 @@
+// HTML badge script placeholder
