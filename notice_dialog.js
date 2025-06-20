@@ -1,1 +1,0 @@
-/* notice_dialog.js content */
