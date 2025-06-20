@@ -1,5 +1,19 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en"><script>
+  const password = "autoposter2025"; // change this!
+  const saved = localStorage.getItem("authed");
+
+  if (saved !== "yes") {
+    const userInput = prompt("Enter password to view this page:");
+    if (userInput !== password) {
+      document.body.innerHTML = "<h1 style='text-align:center; margin-top:20%'>Access Denied</h1>";
+      throw new Error("Unauthorized");
+    } else {
+      localStorage.setItem("authed", "yes");
+    }
+  }
+</script>
+<head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
